@@ -7,7 +7,7 @@ public class Sprinter extends Athlete{
 	}
 
 	@Override
-	public double compete(String gameSport) {
+	public double compete(String gameType) {
 		// TODO Auto-generated method stub
 		return 10*(1+Math.random());
 	}

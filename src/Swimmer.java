@@ -7,7 +7,7 @@ public class Swimmer extends Athlete{
 	}
 	
 	@Override
-	public double compete(String gameSport){
+	public double compete(String gameType){
 		return	100*(1+Math.random());
 	}
 

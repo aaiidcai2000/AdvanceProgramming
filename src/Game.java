@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 
 public class Game {
-	static final int firstPlacePoint=5;
-	static final int secondPlacePoint=2;
-	static final int thirdPlacePoint=1;
+	public static final int firstPlacePoint=5;
+	public static final int secondPlacePoint=2;
+	public static final int thirdPlacePoint=1;
 	
 	private ArrayList<Athlete> athletes;
 	private Official official;
@@ -112,6 +112,10 @@ public class Game {
 		Game game1 = new Game("asdasd",athletes,official1,"swimming");
 		game1.start();
 		game1.printResult();
+		
+		for(int i=0;i<5;++i){
+			System.out.println(athletes.get(i).getPoints());
+		}
 	}
 	
 

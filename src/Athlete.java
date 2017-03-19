@@ -11,9 +11,9 @@ public abstract class Athlete extends Participant {
 		return points;
 	}
 	
-	public abstract double compete(String gameSport);
+	public abstract double compete(String gameType);
 
-	public boolean addPoints( int points){
+	public boolean addPoints(int points){
 		this.points += points;
 		return true;
 	}

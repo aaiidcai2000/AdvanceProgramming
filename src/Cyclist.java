@@ -7,7 +7,7 @@ public class Cyclist extends Athlete{
 	}
 
 	@Override
-	public double compete(String gameSport) {
+	public double compete(String gameType) {
 		// TODO Auto-generated method stub
 		return 500+300*Math.random();
 	}

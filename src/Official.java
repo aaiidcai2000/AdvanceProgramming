@@ -37,12 +37,6 @@ public class Official extends Participant {
 	public int declareTheThird() {
 		return numberOfThird;
 	}
-	
-	
-
-
-
-
 
 	
 }

@@ -7,10 +7,10 @@ public class SuperAthlete extends Athlete{
 	}
 
 	@Override
-	public double compete(String gameSport) {
-		if(gameSport=="swimming") return 100*(1+Math.random());
-		if(gameSport=="cycling") return 500+300*Math.random();
-		if(gameSport=="swimming") return 10*(1+Math.random());
+	public double compete(String gameType) {
+		if(gameType=="swimming") return 100*(1+Math.random());
+		if(gameType=="cycling") return 500+300*Math.random();
+		if(gameType=="swimming") return 10*(1+Math.random());
 		else
 			System.out.println("No such sport game,Error!");
 			return 0;
