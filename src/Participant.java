@@ -1,10 +1,17 @@
-
-public class Participant {
+/**
+ * @author Yuan Hao (Alex) Liu s3583320
+ * 
+ * The class record the basic information of the participants in the Ozlympic game,
+ * including their ID,name,nationality and age.
+ * 
+ */
+public abstract class Participant {
 	private String ID;
 	private String name;
 	private String state;
 	private int age;
 	
+	//initialize Participant with ID,name,nationality,age
 	public Participant(String _ID,String _name,String _state,int _age){
 		ID=_ID;
 		name=_name;
