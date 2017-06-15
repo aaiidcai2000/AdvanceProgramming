@@ -1,0 +1,94 @@
+.label {
+    -fx-font-family:  Arial;
+    -fx-text-fill: black;
+}
+
+.chart-title{
+	-fx-font-family:  Arial;
+}
+
+.data0.chart-bar {
+	-fx-bar-fill:white;
+    -fx-background-image: url("moving.png");
+}
+.data1.chart-bar {
+	-fx-bar-fill:white;
+    -fx-background-image: url("moving.png");
+}
+.data2.chart-bar {
+	-fx-bar-fill:white;
+    -fx-background-image: url("moving.png");
+}
+.data3.chart-bar {
+	-fx-bar-fill:white;
+    -fx-background-image: url("moving.png");
+}
+.data4.chart-bar {
+	-fx-bar-fill:white;
+    -fx-background-image: url("moving.png");
+}
+.data5.chart-bar {
+	-fx-bar-fill:white;
+    -fx-background-image: url("moving.png");
+}
+.data6.chart-bar {
+	-fx-bar-fill:white;
+    -fx-background-image: url("moving.png");
+}
+.data7.chart-bar {
+	-fx-bar-fill:white;
+    -fx-background-image: url("moving.png");
+}
+.data8.chart-bar {
+	-fx-bar-fill:white;
+    -fx-background-image: url("moving.png");
+
+}
+
+#result{
+   -fx-font: bold italic 20pt Arial;
+   -fx-fill: #778899;
+   -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 10, 0.0 , 0 , 4 );
+}
+
+
+.button {
+    
+    -fx-text-fill: #d8d8d8;
+    -fx-font: bold italic 10pt Arial;
+
+    -fx-background-color: 
+        #090a0c,
+        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+        linear-gradient(#20262b, #191d22),
+        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 5,4,3,5;
+    -fx-background-radius: 16;
+
+    -fx-background-insets: 0,1,2,0;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-family: "Arial";
+    -fx-text-fill: linear-gradient(white, #d0d0d0);
+    -fx-font-size: 12px;
+    -fx-padding: 8 16 8 16 ;
+
+}
+
+
+
+.button:hover {
+      -fx-background-color: 
+      
+        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0)),
+
+        linear-gradient(#20262b, #191d22),
+            linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+         #090a0c;
+}
+
+.button:pressed, .button:default:hover:pressed {
+
+    -fx-padding: 10 15 6 17;
+    -fx-background-insets: 2 0 4 2,2 0 3 0, 2 0 0 0, 2 0 5 0;
+}

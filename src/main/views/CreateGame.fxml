@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="750.0" stylesheets="@mainStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.views.CreateGameController">
+   <children>
+      <Button fx:id="btnBackMenu" layoutX="21.0" layoutY="17.0" mnemonicParsing="false" onAction="#handleBtnBackMenu" text="Back To Menu">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Text layoutX="246.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Creating a Game">
+         <font>
+            <Font name="Times Bold" size="29.0" />
+         </font>
+      </Text>
+      <Text layoutX="83.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Game type:">
+         <font>
+            <Font name="Times Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="554.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selected Referee:">
+         <font>
+            <Font name="Times Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="71.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please Choose 5 to 8 athletes and 1 Referee:">
+         <font>
+            <Font name="Times Bold" size="19.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tableView" layoutX="53.0" layoutY="122.0" prefHeight="264.0" prefWidth="390.0">
+        <columns>
+          <TableColumn fx:id="ID" prefWidth="75.0" resizable="false" text="ID" />
+          <TableColumn fx:id="type" prefWidth="75.0" resizable="false" text="Type" />
+            <TableColumn fx:id="name" prefWidth="75.0" resizable="false" text="Name" />
+            <TableColumn fx:id="age" prefWidth="71.0" resizable="false" text="Age" />
+            <TableColumn fx:id="state" prefWidth="75.0" resizable="false" text="State" />
+        </columns>
+      </TableView>
+      <Text layoutX="552.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selected Athletes:">
+         <font>
+            <Font name="Times Bold" size="19.0" />
+         </font>
+      </Text>
+      <ListView fx:id="listAth" layoutX="527.0" layoutY="111.0" prefHeight="189.0" prefWidth="185.0" />
+      <Button fx:id="btnRunGame" layoutX="559.0" layoutY="29.0" mnemonicParsing="false" onAction="#handleBtnRunGame" text="Run the game">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <RadioButton fx:id="rbtnSwi" layoutX="185.0" layoutY="66.0" mnemonicParsing="false" onAction="#handleRbtns" selected="true" text="Swimming">
+         <font>
+            <Font name="Times Roman" size="15.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="gameType" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rbtnCyc" layoutX="288.0" layoutY="66.0" mnemonicParsing="false" onAction="#handleRbtns" text="Cycling" toggleGroup="$gameType">
+         <font>
+            <Font name="Times Roman" size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rbtnRun" layoutX="379.0" layoutY="66.0" mnemonicParsing="false" onAction="#handleRbtns" text="Running" toggleGroup="$gameType">
+         <font>
+            <Font name="Times Roman" size="15.0" />
+         </font>
+      </RadioButton>
+      <Button fx:id="btnAddAth" layoutX="464.0" layoutY="166.0" mnemonicParsing="false" onAction="#handleBtnAddDel" styleClass="selectButton" text="&gt;&gt;" />
+      <Button fx:id="btnAddRef" layoutX="464.0" layoutY="333.0" mnemonicParsing="false" onAction="#handleBtnAddDel" styleClass="selectButton" text="&gt;&gt;" />
+      <Button fx:id="btnDelAth" layoutX="464.0" layoutY="210.0" mnemonicParsing="false" onAction="#handleBtnAddDel" styleClass="selectButton" text="&lt;&lt;" />
+      <Button fx:id="btnDelRef" layoutX="464.0" layoutY="362.0" mnemonicParsing="false" onAction="#handleBtnAddDel" styleClass="selectButton" text="&lt;&lt;" />
+      <ListView fx:id="listRef" layoutX="526.0" layoutY="333.0" prefHeight="50.0" prefWidth="185.0" />
+   </children>
+</AnchorPane>

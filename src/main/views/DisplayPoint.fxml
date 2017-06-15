@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="750.0" stylesheets="@result.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.views.DisplayPointController">
+   <children>
+      <Button fx:id="btnBackMenu" layoutX="41.0" layoutY="37.0" mnemonicParsing="false" onAction="#handleBtnBackMenu" text="Back To Menu">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Text layoutX="299.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="ScoreBoard">
+         <font>
+            <Font name="Times Roman" size="33.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tableView" layoutX="275.0" layoutY="87.0" prefHeight="291.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="athID" prefWidth="94.0" resizable="false" text="Athlete" />
+          <TableColumn fx:id="point" prefWidth="88.0" resizable="false" text="Point" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

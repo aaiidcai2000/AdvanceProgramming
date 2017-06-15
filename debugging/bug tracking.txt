@@ -1,0 +1,9 @@
+bug1:
+String couldn't use == to compare, should using equals instead.
+
+bug2:
+NullPointer because of declaration of ArrayList need to new ArratLists<>() in the beginning
+
+bug3:
+if already using a try-catch to handle the throw new exception, then donesn't need the declaration of throws
+
